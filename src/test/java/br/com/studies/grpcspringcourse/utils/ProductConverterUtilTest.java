@@ -12,7 +12,7 @@ class ProductConverterUtilTest {
 
     @Test
     void whenConverterAProductToOutputDto_thenReturnAOutputDTO() {
-        var product = new Product(1, "Test Product", 10.0, 5);
+        var product = new Product(1L, "Test Product", 10.0, 5);
         var productOutputDto = ProductConverterUtil.toProductOutputDTO(product);
 //        Assertions.assertThat(product)
 //                .usingRecursiveComparison()

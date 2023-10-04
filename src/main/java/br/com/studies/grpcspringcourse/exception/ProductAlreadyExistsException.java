@@ -2,12 +2,12 @@ package br.com.studies.grpcspringcourse.exception;
 
 import io.grpc.Status;
 
-public class AlreadyExistsException extends BaseBusinessException {
+public class ProductAlreadyExistsException extends BaseBusinessException {
 
-    private static final String ERROR_MESSAGE = "Product is already registered in the system.";
+    private static final String ERROR_MESSAGE = "Product %s is already registered in the system.";
     private final String name;
 
-    public AlreadyExistsException(String name) {
+    public ProductAlreadyExistsException(String name) {
         super(String.format(ERROR_MESSAGE, name));
         this.name = name;
     }

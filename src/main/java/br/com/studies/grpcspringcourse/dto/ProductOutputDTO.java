@@ -1,19 +1,19 @@
 package br.com.studies.grpcspringcourse.dto;
 
 public class ProductOutputDTO {
-    private final Integer id;
+    private final Long id;
     private final String name;
     private final Double price;
     private final Integer quantityInStock;
 
-    public ProductOutputDTO(Integer id, String name, Double price, Integer quantityInStock) {
+    public ProductOutputDTO(Long id, String name, Double price, Integer quantityInStock) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.quantityInStock = quantityInStock;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
